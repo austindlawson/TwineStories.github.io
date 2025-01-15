@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O5 Ranks/What They Do</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #121212, #1a1a1a); /* Dark gradient background */
+            color: #f0f0f0; /* Light text color for contrast */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        .classified-header {
+            width: 100%;
+            background-color: #d9534f;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 0;
+            text-transform: uppercase;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .classified-header::before {
+            content: "CLASSIFIED DOCUMENT: ";
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: #fff; /* Light text for header */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+        .text-box {
+            width: 90%;
+            margin: 10px 0;
+            text-align: left;
+            font-size: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .text-box:hover {
+            transform: scale(1.02);
+        }
+        a {
+            color: #00ccff; /* Light cyan for links */
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #0056b3; /* Darker cyan on hover */
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #aaa; /* Slightly lighter text for footer */
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password1 = prompt("Enter first password:");
+            const password2 = prompt("Enter second password:");
+            if (password1 === "AD" && password2 === "AD") {
+                window.location.href = "admin-website.html"; // Redirect to admin page
+            } else {
+                alert("Incorrect password. Access denied.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="classified-header">
+        Any unauthorized personnel will be tracked, located, and detained.
+    </div>
+    <h1>O5 Ranks/What They Do</h1>
+    <div class="text-box">
+        <p>The O5 Council is the highest decision-making body within the SCP Foundation. Their primary responsibilities include overseeing the Foundation's operations, making critical decisions regarding containment protocols, and ensuring the secrecy of the Foundation's activities. They operate in secrecy and are typically the only individuals with access to the most classified information.</p>
+
+        <p><a onclick="checkPassword()">Administrator</a></p>
+        <p><a href="O5-1.html">O5-1</a></p>
+        <p><a href="O5-2.html">O5-2</a></p>
+        <p><a href="O5-3.html">O5-3</a></p>
+        <p><a href="O5-4.html">O5-4</a></p>
+        <p><a href="O5-5.html">O5-5</a></p>
+        <p><a href="O5-6.html">O5-6</a></p>
+        <p><a href="O5-7.html">O5-7</a></p>
+        <p><a href="O5-8.html">O5-8</a></p>
+        <p><a href="O5-9.html">O5-9</a></p>
+        <p><a href="O5-10.html">O5-10</a></p>
+        <p><a href="O5-11.html">O5-11</a></p>
+        <p><a href="O5-12.html">O5-12</a></p>
+        <p><a href="O5-13.html">O5-13</a></p>
+    </div>
+    <p class="text-box footer">
+        <a href="scp.html">Go to SCP Page</a>
+    </p>
+
+    <footer class="footer">
+        <p>&copy; 2024 SCP Foundation. All rights reserved. | SCP Area 13 Made by badinyan</p>
+    </footer>
+</body>
+</html>
+

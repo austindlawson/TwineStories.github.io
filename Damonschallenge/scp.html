@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Area</title>
+    <style>
+        body {
+            margin: 0; 
+            font-family: 'Courier New', Courier, monospace; 
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ccc; 
+        }
+        h1 {
+            text-align: center; 
+            margin-top: 50px; 
+            font-size: 48px; 
+            color: #ffcc00; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+            animation: fadeIn 2s; /* Animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        p {
+            margin: 0; 
+            position: absolute; 
+            top: 100px; 
+            width: 95%; 
+            text-align: left; 
+            font-size: 22px; 
+            padding: 15px; 
+            background-color: rgba(10, 10, 10, 0.85); /* Dark background for text */
+            border-radius: 10px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); 
+            transition: transform 0.3s; /* Hover effect */
+        }
+        p:hover {
+            transform: scale(1.05); /* Zoom on hover */
+        }
+        .additional-text {
+            position: absolute; 
+            width: 95%; 
+            text-align: left; 
+            font-size: 20px; 
+            padding: 15px; 
+            background-color: rgba(10, 10, 10, 0.85); /* Dark background */
+            border-radius: 10px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); 
+            transition: transform 0.3s; 
+        }
+        .additional-text:hover {
+            transform: scale(1.05); 
+        }
+        a {
+            color: #ffcc00; 
+            text-decoration: none; 
+            transition: color 0.3s; 
+        }
+        a:hover {
+            color: #ffffff; /* Change link color on hover */
+            text-decoration: underline; 
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = prompt("Please enter the password:");
+            if (password === "O5-1") {
+                window.location.href = "O5.html"; 
+            } else {
+                alert("Incorrect password. Access denied.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>SCP Area</h1>
+    <p>Click the links to find out more info on us</p>
+    <p class="additional-text" style="top: 180px;">
+        <a href="javascript:void(0);" onclick="checkPassword()">Go to O5 Page (Only O5)</a>
+    </p>
+    <p class="additional-text" style="top: 240px;">
+        <a href="Scientific Department.html">Go to Scientific Department</a>
+    </p>
+    <p class="additional-text" style="top: 300px;">
+        <a href="Security Department.html">Go to Security Department</a>
+    </p>
+    <p class="additional-text" style="top: 360px;">
+        <a href="Medical Department.html">Go to Medical Department</a>
+    </p>
+    <p class="additional-text" style="top: 420px;">
+        <a href="MTF.html">Go to MTF</a>
+    </p>
+    <p class="additional-text" style="top: 480px;">
+        <a href="Ethical Teams.html">Go to Ethical Teams</a>
+    </p>
+
+    <footer>
+        <p>&copy; 2024 SCP Foundation. All rights reserved. | SCP Area 13 Made by badinyan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Teams</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #121212, #1a1a1a); /* Dark gradient background */
+            color: #f0f0f0; /* Light text color for contrast */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        .classified-header {
+            width: 100%;
+            background-color: #5bc0de; /* Light cyan header */
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 0;
+            text-transform: uppercase;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .classified-header::before {
+            content: "INFORMATION DOCUMENT: ";
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: #fff; /* Light text for header */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+        .text-box {
+            width: 90%;
+            margin: 10px 0;
+            text-align: left;
+            font-size: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .text-box:hover {
+            transform: scale(1.02);
+        }
+        a {
+            color: #00ccff; /* Light cyan for links */
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #0056b3; /* Darker cyan on hover */
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #aaa; /* Slightly lighter text for footer */
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = prompt("Enter the password:");
+            if (password === "Ethics2024") {
+                window.location.href = "admin-ethical-teams.html"; // Redirect to admin page
+            } else {
+                alert("Incorrect password. Access denied.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="classified-header">
+        Any unauthorized personnel will be tracked, located, and detained.
+    </div>
+    <h1>Ethical Teams</h1>
+    <div class="text-box">
+        <p>The Ethical Teams are dedicated to upholding the principles of ethical containment and humane treatment of anomalies. They operate under strict guidelines to ensure the safety of both personnel and the anomalies they work with.</p>
+
+        <p><a onclick="checkPassword()">Administrator</a></p>
+        <p><a href="Ethics Committee.html">Ethics Committee</a></p>
+        <p><a href="Administrative Department.html">Administrative Department</a></p>
+        <p><a href="Department of External Affairs.html">Department of External Affairs</a></p>
+        <p><a href="Foundation Personnel.html ">Foundation Personnel</a></p>
+    </div>
+    <p class="text-box footer">
+        <a href="scp.html">Go to SCP Page</a>
+    </p>
+
+    <footer class="footer">
+        <p>&copy; 2024 SCP Foundation. All rights reserved. | SCP Area 13 Made by badinyan.</p>
+    </footer>
+</body>
+</html>
